@@ -1,31 +1,21 @@
 question,optionA,optionB,optionC,correct_answer,category
-"What do you say when you meet someone?",Bye,Hello,Thanks,B,Greetings
-"What do you say when you leave?",Goodbye,Hello,Please,A,Greetings
-"How do you answer: “What’s your name?”",I am fine,I like apple,My name is Anna,C,Greetings
-"What do you say when someone says “Hello”?",Hello,No,OK,A,Greetings
-"How do you say you feel good?",I’m sad,I’m happy,I’m angry,B,Greetings
-"What color is the sun?",Blue,Yellow,Pink,B,Colors
-"What color is the grass?",Green,Red,Orange,A,Colors
-"What color is the sky?",Brown,Blue,White,B,Colors
-"What color is an apple?",Red,Purple,Black,A,Colors
-"Which one is a color?",Eat,Run,Green,C,Colors
-"Who is your mom’s mom?",Sister,Grandma,Aunt,B,Family
-"Who is your dad?",Brother,Father,Uncle,B,Family
-"Who is your sister’s brother?",You,Grandma,Teacher,A,Family
-"Who is a girl?",Mom,Dad,Grandpa,A,Family
-"Which word is about family?",Ball,Bag,Sister,C,Family
-"I ___ a student.",is,am,are,B,Present Simple
-"You ___ my friend.",are,is,am,A,Present Simple
-"He ___ my dad.",are,is,am,B,Present Simple
-"She ___ my mom.",am,are,is,C,Present Simple
-"We ___ happy.",are,is,am,A,Present Simple
-"They ___ my friends.",are,is,am,A,Present Simple
-"I ___ 6 years old.",is,are,am,C,Present Simple
-"He ___ my brother.",is,are,am,A,Present Simple
-"You ___ funny.",are,is,am,A,Present Simple
-"I ___ a girl.",is,am,are,B,Present Simple
-"The book is ___ the table.",under,on,eat,B,Prepositions
-"The cat is ___ the chair.",in,is,jump,A,Prepositions
-"The bag is ___ the bed.",red,under,run,B,Prepositions
-"The toy is ___ the box.",behind,goes,like,A,Prepositions
-"The pencil is ___ the table.",on,run,sleep,A,Prepositions
+"I ___ apples.",likes,like,liking,B,Present Simple
+"He ___ to school.",go,goes,going,B,Present Simple
+"They ___ soccer.",plays,playing,play,C,Present Simple
+"She ___ TV.",watch,watches,watched,B,Present Simple
+"You ___ ice cream.",likes,liking,like,C,Present Simple
+"We ___ books.",reads,read,reading,B,Present Simple
+"My dad ___ coffee.",drink,drinks,drinking,B,Present Simple
+"I ___ to music.",listens,listen,listening,B,Present Simple
+"She ___ a bike.",ride,rides,riding,B,Present Simple
+"He ___ milk.",drinks,drink,drinking,A,Present Simple
+"You ___ football.",play,plays,played,A,Present Simple
+"The dog ___ fast.",runs,run,running,A,Present Simple
+"We ___ at 7 o’clock.",wake,wakes,waking,A,Present Simple
+"I ___ TV in the evening.",watch,watches,watching,A,Present Simple
+"My mom ___ dinner.",cook,cooks,cooking,B,Present Simple
+"They ___ English at school.",learn,learns,learning,A,Present Simple
+"He ___ games.",plays,play,playing,A,Present Simple
+"The cat ___ milk.",drinks,drink,drinking,A,Present Simple
+"I ___ school at 8.",goes,go,going,B,Present Simple
+"She ___ her homework.",do,does,doing,B,Present Simple

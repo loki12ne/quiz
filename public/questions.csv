@@ -1,31 +1,31 @@
 question,optionA,optionB,optionC,correct_answer,category
-"What color is the sky?",Green,Blue,Red,B,Vocabulary
-"Which one is a fruit?",Apple,Chair,Bag,A,Vocabulary
-"What do you use to write?",Pen,Book,Table,A,Vocabulary
-"Which one is an animal?",Dog,Banana,Ball,A,Vocabulary
-"What do you wear on your feet?",Hat,Shoes,Shirt,B,Vocabulary
-"Which is a family member?",Sister,Table,School,A,Vocabulary
-"What is round and bounces?",Book,Ball,Chair,B,Vocabulary
-"Which one is a color?",Eat,Red,Run,B,Vocabulary
-"What do you sit on?",Chair,Window,Pencil,A,Vocabulary
-"What do you use to read?",Banana,Book,Bag,B,Vocabulary
-"She ___ to school every day.",go,goes,going,B,Grammar
-"They ___ football on Sunday.",plays,play,playing,B,Grammar
-"I ___ orange juice.",likes,like,liking,B,Grammar
-"He ___ a teacher.",am,is,are,B,Grammar
-"We ___ happy.",is,are,am,B,Grammar
-"What ___ you like?",do,does,did,A,Grammar
-"My mom ___ dinner every night.",cook,cooks,cooking,B,Grammar
-"Do you ___ cats?",likes,liking,like,C,Grammar
-"It ___ hot today.",is,are,am,A,Grammar
-"He ___ TV after school.",watch,watches,watching,B,Grammar
-"The cat is ___ the chair.",under,eats,run,A,Prepositions
-"The ball is ___ the box.",play,in,are,B,Prepositions
-"The pencil is ___ the table.",on,go,runs,A,Prepositions
-"The dog is ___ the sofa.",behind,cook,by,A,Prepositions
-"The apple is ___ the bag.",in,under,are,A,Prepositions
-"The shoes are ___ the bed.",on,under,is,B,Prepositions
-"The cup is ___ the table.",in,on,next,B,Prepositions
-"The toys are ___ the box.",behind,in,up,B,Prepositions
-"The book is ___ the shelf.",on,under,do,A,Prepositions
-"The cat is ___ the table and the chair.",between,under,in,A,Prepositions
+"What do you say when you meet someone?",Bye,Hello,Thanks,B,Greetings
+"What do you say when you leave?",Goodbye,Hello,Please,A,Greetings
+"How do you answer: “What’s your name?”",I am fine,I like apple,My name is Anna,C,Greetings
+"What do you say when someone says “Hello”?",Hello,No,OK,A,Greetings
+"How do you say you feel good?",I’m sad,I’m happy,I’m angry,B,Greetings
+"What color is the sun?",Blue,Yellow,Pink,B,Colors
+"What color is the grass?",Green,Red,Orange,A,Colors
+"What color is the sky?",Brown,Blue,White,B,Colors
+"What color is an apple?",Red,Purple,Black,A,Colors
+"Which one is a color?",Eat,Run,Green,C,Colors
+"Who is your mom’s mom?",Sister,Grandma,Aunt,B,Family
+"Who is your dad?",Brother,Father,Uncle,B,Family
+"Who is your sister’s brother?",You,Grandma,Teacher,A,Family
+"Who is a girl?",Mom,Dad,Grandpa,A,Family
+"Which word is about family?",Ball,Bag,Sister,C,Family
+"I ___ a student.",is,am,are,B,Present Simple
+"You ___ my friend.",are,is,am,A,Present Simple
+"He ___ my dad.",are,is,am,B,Present Simple
+"She ___ my mom.",am,are,is,C,Present Simple
+"We ___ happy.",are,is,am,A,Present Simple
+"They ___ my friends.",are,is,am,A,Present Simple
+"I ___ 6 years old.",is,are,am,C,Present Simple
+"He ___ my brother.",is,are,am,A,Present Simple
+"You ___ funny.",are,is,am,A,Present Simple
+"I ___ a girl.",is,am,are,B,Present Simple
+"The book is ___ the table.",under,on,eat,B,Prepositions
+"The cat is ___ the chair.",in,is,jump,A,Prepositions
+"The bag is ___ the bed.",red,under,run,B,Prepositions
+"The toy is ___ the box.",behind,goes,like,A,Prepositions
+"The pencil is ___ the table.",on,run,sleep,A,Prepositions

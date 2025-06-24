@@ -1,0 +1,31 @@
+question,optionA,optionB,optionC,correct_answer,category
+"What color is the sky?",Green,Blue,Red,B,Vocabulary
+"Which one is a fruit?",Apple,Chair,Bag,A,Vocabulary
+"What do you use to write?",Pen,Book,Table,A,Vocabulary
+"Which one is an animal?",Dog,Banana,Ball,A,Vocabulary
+"What do you wear on your feet?",Hat,Shoes,Shirt,B,Vocabulary
+"Which is a family member?",Sister,Table,School,A,Vocabulary
+"What is round and bounces?",Book,Ball,Chair,B,Vocabulary
+"Which one is a color?",Eat,Red,Run,B,Vocabulary
+"What do you sit on?",Chair,Window,Pencil,A,Vocabulary
+"What do you use to read?",Banana,Book,Bag,B,Vocabulary
+"She ___ to school every day.",go,goes,going,B,Grammar
+"They ___ football on Sunday.",plays,play,playing,B,Grammar
+"I ___ orange juice.",likes,like,liking,B,Grammar
+"He ___ a teacher.",am,is,are,B,Grammar
+"We ___ happy.",is,are,am,B,Grammar
+"What ___ you like?",do,does,did,A,Grammar
+"My mom ___ dinner every night.",cook,cooks,cooking,B,Grammar
+"Do you ___ cats?",likes,liking,like,C,Grammar
+"It ___ hot today.",is,are,am,A,Grammar
+"He ___ TV after school.",watch,watches,watching,B,Grammar
+"The cat is ___ the chair.",under,eats,run,A,Prepositions
+"The ball is ___ the box.",play,in,are,B,Prepositions
+"The pencil is ___ the table.",on,go,runs,A,Prepositions
+"The dog is ___ the sofa.",behind,cook,by,A,Prepositions
+"The apple is ___ the bag.",in,under,are,A,Prepositions
+"The shoes are ___ the bed.",on,under,is,B,Prepositions
+"The cup is ___ the table.",in,on,next,B,Prepositions
+"The toys are ___ the box.",behind,in,up,B,Prepositions
+"The book is ___ the shelf.",on,under,do,A,Prepositions
+"The cat is ___ the table and the chair.",between,under,in,A,Prepositions

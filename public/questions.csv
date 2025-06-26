@@ -1,21 +1,31 @@
 question,optionA,optionB,optionC,correct_answer,category
-"I ___ apples.",likes,like,liking,B,Present Simple
-"He ___ to school.",go,goes,going,B,Present Simple
-"They ___ soccer.",plays,playing,play,C,Present Simple
-"She ___ TV.",watch,watches,watched,B,Present Simple
-"You ___ ice cream.",likes,liking,like,C,Present Simple
-"We ___ books.",reads,read,reading,B,Present Simple
-"My dad ___ coffee.",drink,drinks,drinking,B,Present Simple
-"I ___ to music.",listens,listen,listening,B,Present Simple
-"She ___ a bike.",ride,rides,riding,B,Present Simple
-"He ___ milk.",drinks,drink,drinking,A,Present Simple
-"You ___ football.",play,plays,played,A,Present Simple
-"The dog ___ fast.",runs,run,running,A,Present Simple
-"We ___ at 7 o’clock.",wake,wakes,waking,A,Present Simple
-"I ___ TV in the evening.",watch,watches,watching,A,Present Simple
-"My mom ___ dinner.",cook,cooks,cooking,B,Present Simple
-"They ___ English at school.",learn,learns,learning,A,Present Simple
-"He ___ games.",plays,play,playing,A,Present Simple
-"The cat ___ milk.",drinks,drink,drinking,A,Present Simple
-"I ___ school at 8.",goes,go,going,B,Present Simple
-"She ___ her homework.",do,does,doing,B,Present Simple
+"She ___ a student.",am,is,are,B,Grammar
+"They ___ football on Sundays.",play,plays,played,A,Grammar
+"I ___ ice cream.",likes,like,liking,B,Grammar
+"He ___ coffee.",drinks,drink,drinking,A,Grammar
+"She ___ to school every day. (phủ định)",don’t go,doesn’t go,not goes,B,Grammar
+"They ___ like bananas. (phủ định)",doesn’t,don’t,no,B,Grammar
+"Do you like cats?",Yes I am,Yes I do,Yes I like,B,Grammar
+"Does she play piano?",Yes she do,Yes she plays,Yes she does,C,Grammar
+"He ___ like chocolate. (phủ định)",don’t,doesn’t,isn’t,B,Grammar
+"Do they go to school?",Yes they do,Yes they are,Yes they goes,A,Grammar
+"The book is ___ the table.",on,in,under,A,Prepositions
+"The cat is ___ the chair.",under,on,over,A,Prepositions
+"The ball is ___ the box.",in,on,goes,A,Prepositions
+"The shoes are ___ the bed.",under,is,over,A,Prepositions
+"The clock is ___ the wall.",in,on,under,B,Prepositions
+"The toy is ___ the sofa and the table.",between,in,near,A,Prepositions
+"The pen is ___ my bag.",in,at,behind,A,Prepositions
+"Who is your mom’s mom?",Aunt,Grandma,Sister,B,Family
+"Who is your dad’s son? (nếu bạn là con trai)",Me,Uncle,Grandpa,A,Family
+"My sister is a ___",boy,girl,father,B,Family
+"___ is my dad.",He,She,It,A,Family
+"___ is my mom’s father.",Grandpa,Brother,Friend,A,Family
+"The sky is ___.",green,red,blue,C,Colors
+"Apples are ___.",yellow,red,black,B,Colors
+"Bananas are ___.",yellow,purple,blue,A,Colors
+"What color is the grass?",blue,green,white,B,Colors
+"What number is this? (hình số 6)",Five,Six,Seven,B,Numbers
+"How many fingers do you have?",Ten,Five,Eight,A,Numbers
+"What number comes after 7?",6,8,9,B,Numbers
+"Say a number smaller than 4.",Three,Six,Eight,A,Numbers

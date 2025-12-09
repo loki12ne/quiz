@@ -1,31 +1,51 @@
 question,optionA,optionB,optionC,correct_answer,category
-"She ___ a student.",am,is,are,B,Grammar
-"They ___ football on Sundays.",play,plays,played,A,Grammar
-"I ___ ice cream.",likes,like,liking,B,Grammar
-"He ___ coffee.",drinks,drink,drinking,A,Grammar
-"She ___ to school every day. (phủ định)",don’t go,doesn’t go,not goes,B,Grammar
-"They ___ like bananas. (phủ định)",doesn’t,don’t,no,B,Grammar
-"Do you like cats?",Yes I am,Yes I do,Yes I like,B,Grammar
-"Does she play piano?",Yes she do,Yes she plays,Yes she does,C,Grammar
-"He ___ like chocolate. (phủ định)",don’t,doesn’t,isn’t,B,Grammar
-"Do they go to school?",Yes they do,Yes they are,Yes they goes,A,Grammar
-"The book is ___ the table.",on,in,under,A,Prepositions
-"The cat is ___ the chair.",under,on,over,A,Prepositions
-"The ball is ___ the box.",in,on,goes,A,Prepositions
-"The shoes are ___ the bed.",under,is,over,A,Prepositions
-"The clock is ___ the wall.",in,on,under,B,Prepositions
-"The toy is ___ the sofa and the table.",between,in,near,A,Prepositions
-"The pen is ___ my bag.",in,at,behind,A,Prepositions
-"Who is your mom’s mom?",Aunt,Grandma,Sister,B,Family
-"Who is your dad’s son? (nếu bạn là con trai)",Me,Uncle,Grandpa,A,Family
-"My sister is a ___",boy,girl,father,B,Family
-"___ is my dad.",He,She,It,A,Family
-"___ is my mom’s father.",Grandpa,Brother,Friend,A,Family
-"The sky is ___.",green,red,blue,C,Colors
-"Apples are ___.",yellow,red,black,B,Colors
-"Bananas are ___.",yellow,purple,blue,A,Colors
-"What color is the grass?",blue,green,white,B,Colors
-"What number is this? (hình số 6)",Five,Six,Seven,B,Numbers
-"How many fingers do you have?",Ten,Five,Eight,A,Numbers
-"What number comes after 7?",6,8,9,B,Numbers
-"Say a number smaller than 4.",Three,Six,Eight,A,Numbers
+"Có mấy loại tín hiệu điện tử cơ bản?",2 loại (Digital và Analog),3 loại (Digital; Analog; PWM),1 loại (Digital),A,Arduino
+"Hàm setup() trong Arduino chạy bao nhiêu lần trong vòng đời một project?",1 lần duy nhất,Vô hạn,Chạy mỗi khi bấm nút,A,Arduino
+"Hàm setup() được gọi chạy trong tình huống nào?",Khi biên dịch code,Khi nạp code hoặc nhấn nút Reset,Khi vòng lặp loop kết thúc,B,Arduino
+"Có bao nhiêu chương trình thường trú chạy cùng lúc trong Arduino?",1 và chỉ 1,2 chương trình,Không giới hạn,A,Arduino
+"Cách đơn giản nhất để dừng vòng lặp loop() đang chạy?",Dùng lệnh stop(),Rút điện nguồn,Nhấn nút Pause,B,Arduino
+"Các chân có dấu ngã (~) PWM trên Arduino có chức năng gì?",Chỉ Input Analog,Input Digital,Output Analog (giả lập) hoặc Digital I/O,C,Arduino
+"Đơn vị đo thời gian của hàm delay() là gì?",Giây (s),Mili giây (ms),Micro giây (us),B,Arduino
+"Chân Vin trên mạch Arduino dùng để làm gì?",Cấp nguồn ra 5V,Cấp nguồn ra 3.3V,Cấp nguồn đầu vào (bằng hiệu điện thế nguồn cấp),C,Arduino
+"Tại sao nên hạn chế dùng chân RX (0) và TX (1) nếu không cần thiết?",Vì nó có điện áp cao hơn các chân khác,Vì nó dùng để nạp code và giao tiếp Serial,Vì nó không thể xuất tín hiệu Digital,B,Arduino
+"Giá trị điện trở thường dùng với bóng đèn LED trong Arduino là bao nhiêu?",220 ôm,1000 ôm,10 kili ôm,A,Electronics
+"Tại sao nút nhấn (Button) cần có điện trở nối về cực âm (GND)?",Để đèn sáng hơn,Để tránh tín hiệu bị nhiễu (floating) giữ trạng thái 0,Để nút nhấn nhạy hơn,B,Electronics
+"Hàm nào dùng để đọc tín hiệu digital từ chân số 12?",digitalWrite(12),digitalRead(12),analogRead(12),B,Arduino
+"Biến trở (Potentiometer) có khoảng giá trị đọc được là bao nhiêu?",0 - 255,0 - 1023,0 - 1,B,Electronics
+"Khoảng giá trị xuất ra (Output) cho độ sáng đèn LED (PWM) là bao nhiêu?",0 - 255,0 - 1023,0 - 100,A,Arduino
+"Thành phần chính bên trong Buzzer để tạo ra âm thanh là gì?",Nam châm vĩnh cửu,Màng rung Piezo (Piezo bender),Cuộn dây đồng,B,Electronics
+"Hàm nào dùng để phát ra âm thanh ở tần số xác định?",beep(),sound(),tone(pin; frequency; duration),C,Arduino
+"Làm thế nào để phát 2 nốt nhạc cùng một lúc bằng hàm tone?",Không thể làm được,Gọi 2 hàm tone liên tiếp có thời gian phủ nhau,Dùng 2 loa khác nhau,B,Arduino
+"Có mấy loại LED 7 đoạn phổ biến?",1 loại,2 loại (Anode chung và Cathode chung),4 loại,B,Electronics
+"Chữ T và R trên cảm biến siêu âm (Ultrasonic) có nghĩa là gì?",T: Time; R: Range,T: Transmitter (Phát); R: Receiver (Thu),T: Top; R: Right,B,Sensors
+"Chân Trig và Echo của cảm biến siêu âm là Input hay Output?",Trig: INPUT; Echo: OUTPUT,Trig: OUTPUT; Echo: INPUT,Cả hai là INPUT,B,Sensors
+"Tốc độ âm thanh trong không khí dùng để tính khoảng cách là bao nhiêu?",340 m/s (0.034 cm/us),3000 km/s,100 m/s,A,Sensors
+"Công thức tính khoảng cách (cm) của cảm biến siêu âm?",distance = duration * 0.034,distance = duration * 0.034 / 2,distance = duration / 2,B,Sensors
+"Hàm pulseIn() có tác dụng gì?",Đo độ rộng xung (thời gian tín hiệu giữ mức HIGH/LOW),Phát ra một xung tín hiệu,Đếm số lần nhấn nút,A,Arduino
+"PIR là viết tắt của từ gì?",Active Infrared Sensor,Passive Infrared Sensor,Personal Infrared Reader,B,Sensors
+"Tại sao cảm biến PIR gọi là Passive (Thụ động)?",Vì nó tự phát ra tia hồng ngoại,Vì nó không tự phát tia mà chỉ nhận sự thay đổi nhiệt độ,Vì nó hoạt động không cần nguồn điện,B,Sensors
+"Kích thước màn hình LCD 1602 hiển thị được bao nhiêu ký tự?",16 ký tự,32 ký tự (2 hàng x 16 cột),20 ký tự,B,Electronics
+"Chân V0 trên LCD dùng để làm gì?",Cấp nguồn,Điều chỉnh độ tương phản (Contrast),Bật tắt đèn nền,B,Electronics
+"Chân Anode và Cathode riêng biệt trên LCD dùng để làm gì?",Cấp nguồn cho chip xử lý,Thắp sáng đèn nền (Backlight),Điều chỉnh độ sáng chữ,B,Electronics
+"Nếu gọi lcd.setCursor(0;0) trong hàm loop thì hiện tượng gì xảy ra?",Chữ in ra bình thường,Con trỏ bị reset liên tục khiến chữ bị nhấp nháy hoặc in đè,Màn hình bị tắt,B,Arduino
+"Góc quay giới hạn của động cơ Servo thường là bao nhiêu?",0 - 90 độ,0 - 180 độ,0 - 360 độ,B,Electronics
+"Relay hoạt động dựa trên hiện tượng vật lý nào?",Cảm ứng điện từ,Quang điện,Nhiệt điện,A,Electronics
+"Cần khai báo gì trong setup() để in thông tin ra màn hình Serial Monitor?",Serial.print(),Serial.begin(9600),Serial.start(),B,Arduino
+"Giá trị điện trở có vạch màu: Cam - Trắng - Vàng - Bạc là bao nhiêu?",39 kΩ,390 kΩ,3.9 kΩ,B,Electronics
+"Quang trở (LDR) có đặc điểm gì về điện trở khi ánh sáng tăng?",Điện trở tăng,Điện trở giảm,Điện trở không đổi,B,Sensors
+"Cảm biến DHT11 đo được những thông số nào?",Chỉ nhiệt độ,Chỉ độ ẩm,Cả nhiệt độ và độ ẩm,C,Sensors
+"DHT11 có dùng để đo độ ẩm đất được không?",Được,Không (vì sẽ bị hư khi tiếp xúc nước),Được nhưng không chính xác,B,Sensors
+"Cấu trúc dữ liệu trả về của DHT11 dài bao nhiêu bytes?",2 bytes,4 bytes,5 bytes (gồm cả checksum),C,Sensors
+"Hàm map(x; in_min; in_max; out_min; out_max) dùng để làm gì?",Vẽ bản đồ,Chuyển đổi giá trị từ thang đo này sang thang đo khác,Tìm giá trị lớn nhất,B,Arduino
+"MQTT Broker là gì?",Là thiết bị cảm biến,Là trung gian nhận và phân phối tin nhắn (Server),Là giao thức bảo mật,B,IoT
+"Quy trình hoạt động cơ bản của MQTT là gì?",Request/Response,Publish/Subscribe,Client/Server,B,IoT
+"Sự khác biệt chính giữa MQTT và HTTP?",MQTT truyền văn bản; HTTP truyền nhị phân,MQTT dùng cho file lớn; HTTP dùng cho IoT,MQTT nhẹ (nhị phân) và realtime; HTTP nặng (văn bản) và chậm hơn,C,IoT
+"QoS level 0 trong MQTT có đặc điểm gì?",Gửi ít nhất 1 lần (At least once),Gửi tối đa 1 lần (At most once - không đảm bảo nhận),Gửi chính xác 1 lần (Exactly once),B,IoT
+"Lệnh Extrude trong Fusion 360 dùng để làm gì?",Xoay hình 2D thành 3D,Kéo/Đẩy biên dạng 2D thành khối 3D,Vát cạnh khối 3D,B,Fusion360
+"Sự khác biệt giữa Fillet và Chamfer?",Fillet vát phẳng; Chamfer bo tròn,Fillet bo tròn; Chamfer vát phẳng,Cả hai đều giống nhau,B,Fusion360
+"Lệnh Revolve dùng để làm gì?",Tạo lò xo,Xoay biên dạng 2D quanh 1 trục để tạo khối 3D,Tạo lỗ rỗng,B,Fusion360
+"Chức năng của Timeline trong Fusion 360?",Xem giờ,Ghi lại lịch sử thiết kế để chỉnh sửa lại các bước trước đó,Tạo video hoạt hình,B,Fusion360
+"File thiết kế của Fusion 360 có đuôi định dạng là gì?",.dwg,.f3d,.stl,B,Fusion360
+"Để làm mượt mép cạnh sắc nhọn thành đường cong; ta dùng lệnh gì?",Chamfer,Fillet,Extrude,B,Fusion360
+"Lệnh Pipe trong Fusion 360 dùng để làm gì?",Tạo hình cầu,Tạo đường ống từ một đường dẫn (path),Cắt khối,B,Fusion360
+"QoS level 1 (At least once) đảm bảo điều gì?",Tin nhắn có thể mất nhưng gửi nhanh,Tin nhắn chắc chắn đến ít nhất 1 lần (có thể bị trùng),Tin nhắn chỉ đến đúng 1 lần,B,IoT

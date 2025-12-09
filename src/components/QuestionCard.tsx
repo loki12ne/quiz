@@ -76,7 +76,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({
     const correct = answer === question.correct_answer;
     setIsCorrect(correct);
     setShowFeedback(true);
-    setCountdown(3);
+    setCountdown(0);
     
     // Play sound
     playSound(correct);

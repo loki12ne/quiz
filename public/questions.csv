@@ -14,6 +14,7 @@ question,optionA,optionB,optionC,correct_answer,category
 "Hàm 'reconnect()' sử dụng vòng lặp while(!client.connected()). Điều này có nghĩa là gì?","Chương trình sẽ bị dừng lại tại đây cho đến khi kết nối được MQTT","Chương trình sẽ bỏ qua nếu không có mạng","Chương trình sẽ tự khởi động lại ESP32",A,Logic
 "Trong hàm setup_wifi, tại sao dùng 'delay(300)' trong vòng lặp kiểm tra kết nối?","Để chờ phần cứng WiFi ổn định giữa các lần kiểm tra","Để người dùng kịp nhìn thấy dấu chấm trên Serial","Cả A và B đều đúng",C,Logic
 "Hàm 'client.publish(topic, payload)' dùng để làm gì?","Nhận dữ liệu từ điện thoại","Gửi dữ liệu từ ESP32 lên Broker","Xóa dữ liệu trên Broker",B,MQTT
+"Tại sao nồng độ PPM lại được gửi dưới dạng '{\"ppm\":' + String(ppm) + '}'?","Để mã hóa dữ liệu","Để đóng gói thành định dạng JSON cho các ứng dụng khác dễ đọc","Để giảm kích thước gói tin",B,Data-Format
 "Chức năng của phím '*' và '#' trong code hiện tại là gì?","Phím xóa và phím thoát","Chưa được định nghĩa chức năng cụ thể (chỉ lưu vào chuỗi mật khẩu)","Dùng để mở cửa khẩn cấp",B,Logic
 "Điều gì xảy ra nếu bạn bỏ lệnh 'client.setCallback(callback)' trong hàm setup?","ESP32 không thể gửi dữ liệu lên","ESP32 không thể nhận lệnh điều khiển từ Broker","ESP32 không thể kết nối WiFi",B,MQTT
 "Tại sao cần lệnh 'doorServo.detach()'?","Để ngắt điện hoàn toàn vào Servo, tránh hiện tượng rung giật khi ở trạng thái nghỉ","Để xóa vị trí góc đã lưu","Để Servo quay nhanh hơn",A,Hardware-Logic

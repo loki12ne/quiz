@@ -1,51 +1,31 @@
 question,optionA,optionB,optionC,correct_answer,category
-"Có mấy loại tín hiệu điện tử cơ bản?",2 loại (Digital và Analog),3 loại (Digital; Analog; PWM),1 loại (Digital),A,Arduino
-"Hàm setup() trong Arduino chạy bao nhiêu lần trong vòng đời một project?",1 lần duy nhất,Vô hạn,Chạy mỗi khi bấm nút,A,Arduino
-"Hàm setup() được gọi chạy trong tình huống nào?",Khi biên dịch code,Khi nạp code hoặc nhấn nút Reset,Khi vòng lặp loop kết thúc,B,Arduino
-"Có bao nhiêu chương trình thường trú chạy cùng lúc trong Arduino?",1 và chỉ 1,2 chương trình,Không giới hạn,A,Arduino
-"Cách đơn giản nhất để dừng vòng lặp loop() đang chạy?",Dùng lệnh stop(),Rút điện nguồn,Nhấn nút Pause,B,Arduino
-"Các chân có dấu ngã (~) PWM trên Arduino có chức năng gì?",Chỉ Input Analog,Input Digital,Output Analog (giả lập) hoặc Digital I/O,C,Arduino
-"Đơn vị đo thời gian của hàm delay() là gì?",Giây (s),Mili giây (ms),Micro giây (us),B,Arduino
-"Chân Vin trên mạch Arduino dùng để làm gì?",Cấp nguồn ra 5V,Cấp nguồn ra 3.3V,Cấp nguồn đầu vào (bằng hiệu điện thế nguồn cấp),C,Arduino
-"Tại sao nên hạn chế dùng chân RX (0) và TX (1) nếu không cần thiết?",Vì nó có điện áp cao hơn các chân khác,Vì nó dùng để nạp code và giao tiếp Serial,Vì nó không thể xuất tín hiệu Digital,B,Arduino
-"Giá trị điện trở thường dùng với bóng đèn LED trong Arduino là bao nhiêu?",220 ôm,1000 ôm,10 kili ôm,A,Electronics
-"Tại sao nút nhấn (Button) cần có điện trở nối về cực âm (GND)?",Để đèn sáng hơn,Để tránh tín hiệu bị nhiễu (floating) giữ trạng thái 0,Để nút nhấn nhạy hơn,B,Electronics
-"Hàm nào dùng để đọc tín hiệu digital từ chân số 12?",digitalWrite(12),digitalRead(12),analogRead(12),B,Arduino
-"Biến trở (Potentiometer) có khoảng giá trị đọc được là bao nhiêu?",0 - 255,0 - 1023,0 - 1,B,Electronics
-"Khoảng giá trị xuất ra (Output) cho độ sáng đèn LED (PWM) là bao nhiêu?",0 - 255,0 - 1023,0 - 100,A,Arduino
-"Thành phần chính bên trong Buzzer để tạo ra âm thanh là gì?",Nam châm vĩnh cửu,Màng rung Piezo (Piezo bender),Cuộn dây đồng,B,Electronics
-"Hàm nào dùng để phát ra âm thanh ở tần số xác định?",beep(),sound(),tone(pin; frequency; duration),C,Arduino
-"Làm thế nào để phát 2 nốt nhạc cùng một lúc bằng hàm tone?",Không thể làm được,Gọi 2 hàm tone liên tiếp có thời gian phủ nhau,Dùng 2 loa khác nhau,B,Arduino
-"Có mấy loại LED 7 đoạn phổ biến?",1 loại,2 loại (Anode chung và Cathode chung),4 loại,B,Electronics
-"Chữ T và R trên cảm biến siêu âm (Ultrasonic) có nghĩa là gì?",T: Time; R: Range,T: Transmitter (Phát); R: Receiver (Thu),T: Top; R: Right,B,Sensors
-"Chân Trig và Echo của cảm biến siêu âm là Input hay Output?",Trig: INPUT; Echo: OUTPUT,Trig: OUTPUT; Echo: INPUT,Cả hai là INPUT,B,Sensors
-"Tốc độ âm thanh trong không khí dùng để tính khoảng cách là bao nhiêu?",340 m/s (0.034 cm/us),3000 km/s,100 m/s,A,Sensors
-"Công thức tính khoảng cách (cm) của cảm biến siêu âm?",distance = duration * 0.034,distance = duration * 0.034 / 2,distance = duration / 2,B,Sensors
-"Hàm pulseIn() có tác dụng gì?",Đo độ rộng xung (thời gian tín hiệu giữ mức HIGH/LOW),Phát ra một xung tín hiệu,Đếm số lần nhấn nút,A,Arduino
-"PIR là viết tắt của từ gì?",Active Infrared Sensor,Passive Infrared Sensor,Personal Infrared Reader,B,Sensors
-"Tại sao cảm biến PIR gọi là Passive (Thụ động)?",Vì nó tự phát ra tia hồng ngoại,Vì nó không tự phát tia mà chỉ nhận sự thay đổi nhiệt độ,Vì nó hoạt động không cần nguồn điện,B,Sensors
-"Kích thước màn hình LCD 1602 hiển thị được bao nhiêu ký tự?",16 ký tự,32 ký tự (2 hàng x 16 cột),20 ký tự,B,Electronics
-"Chân V0 trên LCD dùng để làm gì?",Cấp nguồn,Điều chỉnh độ tương phản (Contrast),Bật tắt đèn nền,B,Electronics
-"Chân Anode và Cathode riêng biệt trên LCD dùng để làm gì?",Cấp nguồn cho chip xử lý,Thắp sáng đèn nền (Backlight),Điều chỉnh độ sáng chữ,B,Electronics
-"Nếu gọi lcd.setCursor(0;0) trong hàm loop thì hiện tượng gì xảy ra?",Chữ in ra bình thường,Con trỏ bị reset liên tục khiến chữ bị nhấp nháy hoặc in đè,Màn hình bị tắt,B,Arduino
-"Góc quay giới hạn của động cơ Servo thường là bao nhiêu?",0 - 90 độ,0 - 180 độ,0 - 360 độ,B,Electronics
-"Relay hoạt động dựa trên hiện tượng vật lý nào?",Cảm ứng điện từ,Quang điện,Nhiệt điện,A,Electronics
-"Cần khai báo gì trong setup() để in thông tin ra màn hình Serial Monitor?",Serial.print(),Serial.begin(9600),Serial.start(),B,Arduino
-"Giá trị điện trở có vạch màu: Cam - Trắng - Vàng - Bạc là bao nhiêu?",39 kΩ,390 kΩ,3.9 kΩ,B,Electronics
-"Quang trở (LDR) có đặc điểm gì về điện trở khi ánh sáng tăng?",Điện trở tăng,Điện trở giảm,Điện trở không đổi,B,Sensors
-"Cảm biến DHT11 đo được những thông số nào?",Chỉ nhiệt độ,Chỉ độ ẩm,Cả nhiệt độ và độ ẩm,C,Sensors
-"DHT11 có dùng để đo độ ẩm đất được không?",Được,Không (vì sẽ bị hư khi tiếp xúc nước),Được nhưng không chính xác,B,Sensors
-"Cấu trúc dữ liệu trả về của DHT11 dài bao nhiêu bytes?",2 bytes,4 bytes,5 bytes (gồm cả checksum),C,Sensors
-"Hàm map(x; in_min; in_max; out_min; out_max) dùng để làm gì?",Vẽ bản đồ,Chuyển đổi giá trị từ thang đo này sang thang đo khác,Tìm giá trị lớn nhất,B,Arduino
-"MQTT Broker là gì?",Là thiết bị cảm biến,Là trung gian nhận và phân phối tin nhắn (Server),Là giao thức bảo mật,B,IoT
-"Quy trình hoạt động cơ bản của MQTT là gì?",Request/Response,Publish/Subscribe,Client/Server,B,IoT
-"Sự khác biệt chính giữa MQTT và HTTP?",MQTT truyền văn bản; HTTP truyền nhị phân,MQTT dùng cho file lớn; HTTP dùng cho IoT,MQTT nhẹ (nhị phân) và realtime; HTTP nặng (văn bản) và chậm hơn,C,IoT
-"QoS level 0 trong MQTT có đặc điểm gì?",Gửi ít nhất 1 lần (At least once),Gửi tối đa 1 lần (At most once - không đảm bảo nhận),Gửi chính xác 1 lần (Exactly once),B,IoT
-"Lệnh Extrude trong Fusion 360 dùng để làm gì?",Xoay hình 2D thành 3D,Kéo/Đẩy biên dạng 2D thành khối 3D,Vát cạnh khối 3D,B,Fusion360
-"Sự khác biệt giữa Fillet và Chamfer?",Fillet vát phẳng; Chamfer bo tròn,Fillet bo tròn; Chamfer vát phẳng,Cả hai đều giống nhau,B,Fusion360
-"Lệnh Revolve dùng để làm gì?",Tạo lò xo,Xoay biên dạng 2D quanh 1 trục để tạo khối 3D,Tạo lỗ rỗng,B,Fusion360
-"Chức năng của Timeline trong Fusion 360?",Xem giờ,Ghi lại lịch sử thiết kế để chỉnh sửa lại các bước trước đó,Tạo video hoạt hình,B,Fusion360
-"File thiết kế của Fusion 360 có đuôi định dạng là gì?",.dwg,.f3d,.stl,B,Fusion360
-"Để làm mượt mép cạnh sắc nhọn thành đường cong; ta dùng lệnh gì?",Chamfer,Fillet,Extrude,B,Fusion360
-"Lệnh Pipe trong Fusion 360 dùng để làm gì?",Tạo hình cầu,Tạo đường ống từ một đường dẫn (path),Cắt khối,B,Fusion360
-"QoS level 1 (At least once) đảm bảo điều gì?",Tin nhắn có thể mất nhưng gửi nhanh,Tin nhắn chắc chắn đến ít nhất 1 lần (có thể bị trùng),Tin nhắn chỉ đến đúng 1 lần,B,IoT
+"Mục đích của việc sử dụng thư viện WiFi.h trong project này là gì?","Tạo điểm phát sóng WiFi","Kết nối ESP32 vào mạng internet thông qua Router","Tăng tốc độ xử lý của CPU",B,Network
+"Tại sao biến 'input_password' lại được khai báo là kiểu String thay vì int?","Để tiết kiệm bộ nhớ","Để dễ dàng cộng dồn các ký tự phím bấm và so sánh chuỗi","Vì Keypad không trả về số",B,Data-Type
+"Trong hàm callback, payload được nhận dưới dạng mảng byte. Tại sao cần chuyển nó sang String?","Để có thể sử dụng các hàm so sánh như == hoặc .substring()","Để tiết kiệm bộ nhớ RAM","Để gửi ngược lại lên Server",A,Logic
+"Lệnh 'client.setServer(mqtt_server, mqtt_port)' thực hiện nhiệm vụ gì?","Khởi tạo một Broker mới trên ESP32","Cung cấp địa chỉ và cổng của máy chủ MQTT để ESP32 kết nối","Đổi tên của ESP32 trên mạng",B,MQTT
+"Tại sao hàm setup() có lệnh 'Wire.begin(21, 22)'?","Để khởi động giao tiếp I2C trên hai chân GPIO cụ thể của ESP32","Để cấp nguồn cho màn hình LCD","Để cấu hình chân cho bàn phím Keypad",A,Hardware-Logic
+"Khi giá trị PPM >= 2000, hàm tone() được gọi. Tham số thứ 3 (2000) trong 'tone(pin, freq, duration)' là gì?","Tần số âm thanh","Âm lượng của còi","Thời gian còi kêu (miligiây)",C,Logic
+"Biến 'lastDHTRead' có vai trò gì trong hàm readTemperature()?","Lưu giá trị nhiệt độ cuối cùng","Kiểm soát thời gian lấy mẫu (sampling) để không đọc cảm biến quá nhanh","Đếm số lần cảm biến bị lỗi",B,Algorithm
+"Hàm 'isnan(t)' trả về giá trị TRUE khi nào?","Khi nhiệt độ t bằng 0","Khi cảm biến DHT11 trả về dữ liệu không phải là số (lỗi đọc)","Khi nhiệt độ quá cao",B,Logic
+"Tại sao phải có lệnh 'client.loop()' đặt trong hàm loop()?","Để duy trì kết nối và xử lý các gói tin MQTT đến/đi theo thời gian thực","Để tạo vòng lặp cho cảm biến","Để khởi động lại kết nối WiFi",A,MQTT
+"Trong hàm mq135_getPPM, biến 'ratio' (Rs/R0) có ý nghĩa gì?","Tỉ lệ giữa điện thế đầu vào và đầu ra","Tỉ lệ điện trở cảm biến so với điện trở trong không khí sạch","Tỉ lệ nồng độ oxy",B,Science-Logic
+"Lệnh 'lcd.clear()' được dùng khi nào trong logic nhập mật khẩu?","Mỗi khi nhấn một phím để cập nhật màn hình mới","Chỉ khi nhập sai mật khẩu","Khi tắt máy",A,Logic
+"Biến 'doorOpenTime' được gán giá trị 'millis()' khi nào?","Khi bắt đầu khởi động hệ thống","Ngay khi người dùng nhập đúng mật khẩu và cửa mở","Khi người dùng nhấn phím 'D'",B,Logic
+"Hàm 'reconnect()' sử dụng vòng lặp while(!client.connected()). Điều này có nghĩa là gì?","Chương trình sẽ bị dừng lại tại đây cho đến khi kết nối được MQTT","Chương trình sẽ bỏ qua nếu không có mạng","Chương trình sẽ tự khởi động lại ESP32",A,Logic
+"Trong hàm setup_wifi, tại sao dùng 'delay(300)' trong vòng lặp kiểm tra kết nối?","Để chờ phần cứng WiFi ổn định giữa các lần kiểm tra","Để người dùng kịp nhìn thấy dấu chấm trên Serial","Cả A và B đều đúng",C,Logic
+"Hàm 'client.publish(topic, payload)' dùng để làm gì?","Nhận dữ liệu từ điện thoại","Gửi dữ liệu từ ESP32 lên Broker","Xóa dữ liệu trên Broker",B,MQTT
+"Tại sao nồng độ PPM lại được gửi dưới dạng '{\"ppm\":' + String(ppm) + '}'?","Để mã hóa dữ liệu","Để đóng gói thành định dạng JSON cho các ứng dụng khác dễ đọc","Để giảm kích thước gói tin",B,Data-Format
+"Chức năng của phím '*' và '#' trong code hiện tại là gì?","Phím xóa và phím thoát","Chưa được định nghĩa chức năng cụ thể (chỉ lưu vào chuỗi mật khẩu)","Dùng để mở cửa khẩn cấp",B,Logic
+"Điều gì xảy ra nếu bạn bỏ lệnh 'client.setCallback(callback)' trong hàm setup?","ESP32 không thể gửi dữ liệu lên","ESP32 không thể nhận lệnh điều khiển từ Broker","ESP32 không thể kết nối WiFi",B,MQTT
+"Tại sao cần lệnh 'doorServo.detach()'?","Để ngắt điện hoàn toàn vào Servo, tránh hiện tượng rung giật khi ở trạng thái nghỉ","Để xóa vị trí góc đã lưu","Để Servo quay nhanh hơn",A,Hardware-Logic
+"Nếu Broker MQTT bị sập, ESP32 sẽ phản ứng như thế nào dựa trên code?","Nó sẽ hoạt động offline bình thường","Nó sẽ liên tục lặp lại hàm reconnect() và bị khựng ở đó","Nó sẽ tự động tìm Broker khác",B,Logic
+"Giá trị 'PPM_B = -2.769' mang số âm thể hiện điều gì?","Lỗi toán học","Điện trở Rs và nồng độ PPM có tỉ lệ nghịch (Rs giảm khi PPM tăng)","Cảm biến đang bị hỏng",B,Science-Logic
+"Trong hàm callback, lệnh 'if (msg == \"led_on\")' so sánh cái gì?","So sánh nội dung tin nhắn nhận được từ MQTT với chuỗi mẫu","So sánh tên của Topic","So sánh trạng thái chân GPIO",A,Logic
+"Biến 'interval = 2000' có đơn vị là gì?","Giây","Miligiây","Microgiây",B,Logic
+"Tại sao trong hàm mq135_getPPM lại có đoạn 'if (v_adc <= 0) v_adc = 0.001'?","Để tăng độ nhạy","Tránh lỗi chia cho 0 khi tính Rs_kOhm","Để làm tròn số điện áp",B,Logic
+"Hàm 'random(0xffff)' tạo ra số trong khoảng nào?","Từ 0 đến 65535","Từ 0 đến 100","Từ 0 đến 9999",A,Logic
+"Hàm 'digitalWrite(LED_PIN, HIGH)' làm gì với đèn LED?","Tắt đèn","Bật đèn","Làm đèn nhấp nháy",B,Logic
+"Tại sao cần 'lastMsg = now' bên trong khối lệnh kiểm tra millis()?","Để cập nhật mốc thời gian, bắt đầu chu kỳ 2 giây tiếp theo","Để reset đồng hồ của ESP32","Để xóa bộ nhớ đệm",A,Algorithm
+"Lệnh 'input_password = \"\"' dùng để làm gì?","Xóa mật khẩu đúng trong bộ nhớ","Reset chuỗi nhập vào để người dùng nhập lại từ đầu cho lần sau","Tắt bàn phím",B,Logic
+"Nếu muốn thay đổi thời gian gửi dữ liệu lên MQTT thành 5 giây, bạn sửa biến nào?","delay(5000)","interval = 5000","lastMsg = 5000",B,Logic
+"Trong 'LiquidCrystal_I2C lcd(0x27, 16, 2)', số 16 và 2 có ý nghĩa gì?","Địa chỉ I2C","Số cột (16) và số dòng (2) của màn hình","Tần số quét màn hình",B,Hardware-Logic

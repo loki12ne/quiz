@@ -1,31 +1,121 @@
 question,optionA,optionB,optionC,correct_answer,category
-"Mục đích của việc sử dụng thư viện WiFi.h trong project này là gì?","Tạo điểm phát sóng WiFi","Kết nối ESP32 vào mạng internet thông qua Router","Tăng tốc độ xử lý của CPU",B,Network
-"Tại sao biến 'input_password' lại được khai báo là kiểu String thay vì int?","Để tiết kiệm bộ nhớ","Để dễ dàng cộng dồn các ký tự phím bấm và so sánh chuỗi","Vì Keypad không trả về số",B,Data-Type
-"Trong hàm callback, payload được nhận dưới dạng mảng byte. Tại sao cần chuyển nó sang String?","Để có thể sử dụng các hàm so sánh như == hoặc .substring()","Để tiết kiệm bộ nhớ RAM","Để gửi ngược lại lên Server",A,Logic
-"Lệnh 'client.setServer(mqtt_server, mqtt_port)' thực hiện nhiệm vụ gì?","Khởi tạo một Broker mới trên ESP32","Cung cấp địa chỉ và cổng của máy chủ MQTT để ESP32 kết nối","Đổi tên của ESP32 trên mạng",B,MQTT
-"Tại sao hàm setup() có lệnh 'Wire.begin(21, 22)'?","Để khởi động giao tiếp I2C trên hai chân GPIO cụ thể của ESP32","Để cấp nguồn cho màn hình LCD","Để cấu hình chân cho bàn phím Keypad",A,Hardware-Logic
-"Khi giá trị PPM >= 2000, hàm tone() được gọi. Tham số thứ 3 (2000) trong 'tone(pin, freq, duration)' là gì?","Tần số âm thanh","Âm lượng của còi","Thời gian còi kêu (miligiây)",C,Logic
-"Biến 'lastDHTRead' có vai trò gì trong hàm readTemperature()?","Lưu giá trị nhiệt độ cuối cùng","Kiểm soát thời gian lấy mẫu (sampling) để không đọc cảm biến quá nhanh","Đếm số lần cảm biến bị lỗi",B,Algorithm
-"Hàm 'isnan(t)' trả về giá trị TRUE khi nào?","Khi nhiệt độ t bằng 0","Khi cảm biến DHT11 trả về dữ liệu không phải là số (lỗi đọc)","Khi nhiệt độ quá cao",B,Logic
-"Tại sao phải có lệnh 'client.loop()' đặt trong hàm loop()?","Để duy trì kết nối và xử lý các gói tin MQTT đến/đi theo thời gian thực","Để tạo vòng lặp cho cảm biến","Để khởi động lại kết nối WiFi",A,MQTT
-"Trong hàm mq135_getPPM, biến 'ratio' (Rs/R0) có ý nghĩa gì?","Tỉ lệ giữa điện thế đầu vào và đầu ra","Tỉ lệ điện trở cảm biến so với điện trở trong không khí sạch","Tỉ lệ nồng độ oxy",B,Science-Logic
-"Lệnh 'lcd.clear()' được dùng khi nào trong logic nhập mật khẩu?","Mỗi khi nhấn một phím để cập nhật màn hình mới","Chỉ khi nhập sai mật khẩu","Khi tắt máy",A,Logic
-"Biến 'doorOpenTime' được gán giá trị 'millis()' khi nào?","Khi bắt đầu khởi động hệ thống","Ngay khi người dùng nhập đúng mật khẩu và cửa mở","Khi người dùng nhấn phím 'D'",B,Logic
-"Hàm 'reconnect()' sử dụng vòng lặp while(!client.connected()). Điều này có nghĩa là gì?","Chương trình sẽ bị dừng lại tại đây cho đến khi kết nối được MQTT","Chương trình sẽ bỏ qua nếu không có mạng","Chương trình sẽ tự khởi động lại ESP32",A,Logic
-"Trong hàm setup_wifi, tại sao dùng 'delay(300)' trong vòng lặp kiểm tra kết nối?","Để chờ phần cứng WiFi ổn định giữa các lần kiểm tra","Để người dùng kịp nhìn thấy dấu chấm trên Serial","Cả A và B đều đúng",C,Logic
-"Hàm 'client.publish(topic, payload)' dùng để làm gì?","Nhận dữ liệu từ điện thoại","Gửi dữ liệu từ ESP32 lên Broker","Xóa dữ liệu trên Broker",B,MQTT
-"Tại sao nồng độ PPM lại được gửi dưới dạng '{\"ppm\":' + String(ppm) + '}'?","Để mã hóa dữ liệu","Để đóng gói thành định dạng JSON cho các ứng dụng khác dễ đọc","Để giảm kích thước gói tin",B,Data-Format
-"Chức năng của phím '*' và '#' trong code hiện tại là gì?","Phím xóa và phím thoát","Chưa được định nghĩa chức năng cụ thể (chỉ lưu vào chuỗi mật khẩu)","Dùng để mở cửa khẩn cấp",B,Logic
-"Điều gì xảy ra nếu bạn bỏ lệnh 'client.setCallback(callback)' trong hàm setup?","ESP32 không thể gửi dữ liệu lên","ESP32 không thể nhận lệnh điều khiển từ Broker","ESP32 không thể kết nối WiFi",B,MQTT
-"Tại sao cần lệnh 'doorServo.detach()'?","Để ngắt điện hoàn toàn vào Servo, tránh hiện tượng rung giật khi ở trạng thái nghỉ","Để xóa vị trí góc đã lưu","Để Servo quay nhanh hơn",A,Hardware-Logic
-"Nếu Broker MQTT bị sập, ESP32 sẽ phản ứng như thế nào dựa trên code?","Nó sẽ hoạt động offline bình thường","Nó sẽ liên tục lặp lại hàm reconnect() và bị khựng ở đó","Nó sẽ tự động tìm Broker khác",B,Logic
-"Giá trị 'PPM_B = -2.769' mang số âm thể hiện điều gì?","Lỗi toán học","Điện trở Rs và nồng độ PPM có tỉ lệ nghịch (Rs giảm khi PPM tăng)","Cảm biến đang bị hỏng",B,Science-Logic
-"Trong hàm callback, lệnh 'if (msg == \"led_on\")' so sánh cái gì?","So sánh nội dung tin nhắn nhận được từ MQTT với chuỗi mẫu","So sánh tên của Topic","So sánh trạng thái chân GPIO",A,Logic
-"Biến 'interval = 2000' có đơn vị là gì?","Giây","Miligiây","Microgiây",B,Logic
-"Tại sao trong hàm mq135_getPPM lại có đoạn 'if (v_adc <= 0) v_adc = 0.001'?","Để tăng độ nhạy","Tránh lỗi chia cho 0 khi tính Rs_kOhm","Để làm tròn số điện áp",B,Logic
-"Hàm 'random(0xffff)' tạo ra số trong khoảng nào?","Từ 0 đến 65535","Từ 0 đến 100","Từ 0 đến 9999",A,Logic
-"Hàm 'digitalWrite(LED_PIN, HIGH)' làm gì với đèn LED?","Tắt đèn","Bật đèn","Làm đèn nhấp nháy",B,Logic
-"Tại sao cần 'lastMsg = now' bên trong khối lệnh kiểm tra millis()?","Để cập nhật mốc thời gian, bắt đầu chu kỳ 2 giây tiếp theo","Để reset đồng hồ của ESP32","Để xóa bộ nhớ đệm",A,Algorithm
-"Lệnh 'input_password = \"\"' dùng để làm gì?","Xóa mật khẩu đúng trong bộ nhớ","Reset chuỗi nhập vào để người dùng nhập lại từ đầu cho lần sau","Tắt bàn phím",B,Logic
-"Nếu muốn thay đổi thời gian gửi dữ liệu lên MQTT thành 5 giây, bạn sửa biến nào?","delay(5000)","interval = 5000","lastMsg = 5000",B,Logic
-"Trong 'LiquidCrystal_I2C lcd(0x27, 16, 2)', số 16 và 2 có ý nghĩa gì?","Địa chỉ I2C","Số cột (16) và số dòng (2) của màn hình","Tần số quét màn hình",B,Hardware-Logic
+"Thư viện Python nào sau đây chuyên dùng để gửi HTTP requests lấy dữ liệu từ Web Tĩnh?","Selenium","Requests","Pandas",B,Topic 1: Data Collection
+"Đối tượng `soup` trong BeautifulSoup được khởi tạo bằng lệnh nào đúng nhất?","BeautifulSoup(html_content, 'html.parser')","BeautifulSoup(url)","requests.get(url)",A,Topic 1: Data Collection
+"Khi một trang web yêu cầu cuộn chuột xuống đáy trang để tải thêm sản phẩm (Lazy loading), công cụ nào phù hợp nhất?","Requests","BeautifulSoup","Selenium",C,Topic 1: Data Collection
+"Đoạn code: `response = requests.get('http://api.com')`. Để kiểm tra request thành công hay không, ta kiểm tra thuộc tính nào?","response.text","response.content","response.status_code",C,Topic 1: Data Collection
+"Mã lỗi HTTP 404 có ý nghĩa gì?","Internal Server Error (Lỗi server)","Not Found (Không tìm thấy trang)","Forbidden (Không có quyền truy cập)",B,Topic 1: Data Collection
+"Trong DOM, thẻ `<div>` chứa thẻ `<p>`. Thẻ `<div>` được gọi là gì của thẻ `<p>`?","Sibling (Anh em)","Parent (Cha)","Child (Con)",B,Topic 1: Data Collection
+"Lệnh `driver.find_element(By.ID, 'submit').click()` trong Selenium thực hiện hành động gì?","Tìm phần tử có ID là 'submit' và nhấp chuột vào nó","Tìm tất cả phần tử có ID là 'submit'","Gửi form đi mà không cần tìm phần tử",A,Topic 1: Data Collection
+"Để lấy nội dung text bên trong một thẻ HTML (ví dụ: `<h1>Title</h1>`), ta dùng thuộc tính nào của BeautifulSoup?","tag.val","tag.text","tag.content",B,Topic 1: Data Collection
+"Hàm `json.loads()` trong Python có tác dụng gì?","Chuyển đổi dictionary Python sang chuỗi JSON","Chuyển đổi chuỗi JSON sang dictionary/list Python","Đọc file JSON từ ổ đĩa",B,Topic 1: Data Collection
+"API thường trả về dữ liệu dưới định dạng nào phổ biến nhất?","HTML","JSON","Docx",B,Topic 1: Data Collection
+"Cấu trúc XPath `//div[@class='item']` có ý nghĩa gì?","Chọn thẻ div đầu tiên có class là item","Chọn tất cả thẻ div có class là item ở bất kỳ đâu","Chọn thẻ div con trực tiếp của root",B,Topic 1: Data Collection
+"Tại sao Selenium chậm hơn Requests?","Vì nó phải tải cả hình ảnh, CSS và thực thi JavaScript như một trình duyệt thật","Vì code Selenium dài hơn","Vì Selenium chạy trên server thay vì client",A,Topic 1: Data Collection
+"Trong Requests, method nào dùng để gửi dữ liệu lên server (ví dụ: điền form login)?","GET","POST","HEAD",B,Topic 1: Data Collection
+"Thuộc tính `tag.attrs` trong BeautifulSoup trả về kiểu dữ liệu gì?","List","String","Dictionary",C,Topic 1: Data Collection
+"Để giả lập một trình duyệt Chrome ẩn danh (không hiện giao diện) với Selenium, ta dùng tùy chọn nào?","Headless mode","Incognito mode","Safe mode",A,Topic 1: Data Collection
+"Đoạn code: `soup.find_all('a')` trả về kết quả gì?","Thẻ <a> đầu tiên tìm thấy","Một list chứa tất cả các thẻ <a>","Số lượng thẻ <a>",B,Topic 1: Data Collection
+"Web Tĩnh (Static Web) khác Web Động (Dynamic Web) ở điểm nào cơ bản nhất khi scraping?","Web tĩnh tải dữ liệu qua AJAX","Web tĩnh trả về toàn bộ nội dung HTML ngay trong response đầu tiên","Web tĩnh luôn có đuôi .html",B,Topic 1: Data Collection
+"Header 'User-Agent' trong HTTP Request dùng để làm gì?","Xác định danh tính trình duyệt/thiết bị gửi request","Xác định địa chỉ IP người gửi","Mã hóa dữ liệu gửi đi",A,Topic 1: Data Collection
+"Khi API yêu cầu xác thực bằng Key, key này thường được gửi ở đâu?","Trong URL parameters hoặc Header","Trong thẻ HTML","Trong cookie của trình duyệt",A,Topic 1: Data Collection
+"Nếu `soup.find('div', id='xyz')` không tìm thấy thẻ nào, nó trả về gì?","Báo lỗi (Error)","None","Chuỗi rỗng",B,Topic 1: Data Collection
+"Quy trình ETL viết tắt của 3 từ nào?","Extract - Transfer - Load","Extract - Transform - Load","Entry - Transform - Log",B,Topic 2: Data Warehouse & DB
+"Data Warehouse khác Operational Database (OLTP) ở điểm nào?","DW dùng cho giao dịch hàng ngày, OLTP dùng cho phân tích","DW tối ưu cho đọc/phân tích, OLTP tối ưu cho ghi/giao dịch","DW lưu dữ liệu hiện tại, OLTP lưu lịch sử",B,Topic 2: Data Warehouse & DB
+"Trong định lý CAP, 'P' là viết tắt của gì?","Partition Tolerance (Chịu lỗi phân vùng)","Performance (Hiệu năng)","Privacy (Riêng tư)",A,Topic 2: Data Warehouse & DB
+"SQL Database tuân thủ nguyên tắc nào?","BASE","ACID","CAP",B,Topic 2: Data Warehouse & DB
+"MongoDB là loại Database nào?","Relational (SQL)","Document-oriented (NoSQL)","Graph Database",B,Topic 2: Data Warehouse & DB
+"Staging Area trong quy trình dữ liệu dùng để làm gì?","Lưu trữ dữ liệu vĩnh viễn","Lưu trữ tạm thời dữ liệu thô trước khi xử lý và đưa vào DW","Hiển thị báo cáo cho người dùng",B,Topic 2: Data Warehouse & DB
+"Đặc điểm của NoSQL tuân thủ BASE là gì?","Tính nhất quán tuyệt đối (Strong Consistency)","Tính nhất quán cuối cùng (Eventual Consistency)","Không bao giờ lỗi",B,Topic 2: Data Warehouse & DB
+"Khi cần lưu trữ dữ liệu có cấu trúc mạng xã hội (bạn bè của bạn bè), loại NoSQL nào tối ưu nhất?","Key-Value","Document","Graph",C,Topic 2: Data Warehouse & DB
+"Câu lệnh SQL nào dùng để lấy dữ liệu từ bảng?","GET","SELECT","FETCH",B,Topic 2: Data Warehouse & DB
+"Định dạng dữ liệu JSON tương đương với cấu trúc nào trong Python?","List","Tuple","Dictionary",C,Topic 2: Data Warehouse & DB
+"Quy trình ELT (Extract-Load-Transform) thường được dùng khi nào?","Dữ liệu nhỏ, xử lý nhanh","Hệ thống Big Data, Data Lake hiện đại cần tốc độ nạp nhanh","Hệ thống RDBMS truyền thống",B,Topic 2: Data Warehouse & DB
+"ACID: Chữ 'A' (Atomicity) có nghĩa là gì?","Giao dịch phải hoàn thành trọn vẹn hoặc không làm gì cả","Giao dịch phải nhanh","Giao dịch phải độc lập",A,Topic 2: Data Warehouse & DB
+"Khi nào nên chọn SQL thay vì NoSQL?","Dữ liệu không có cấu trúc cố định","Cần mở rộng chiều ngang dễ dàng","Cần đảm bảo tính toàn vẹn dữ liệu (quan hệ chặt chẽ)",C,Topic 2: Data Warehouse & DB
+"Redis là ví dụ điển hình của loại NoSQL nào?","Key-Value Store","Column-based","Document Store",A,Topic 2: Data Warehouse & DB
+"Data Mart là gì?","Kho dữ liệu khổng lồ chứa tất cả dữ liệu","Tập con của Data Warehouse phục vụ cho một phòng ban cụ thể","Nơi lưu trữ log hệ thống",B,Topic 2: Data Warehouse & DB
+"Trong JSON, mảng (array) được bao bởi dấu gì?","Ngoặc nhọn {}","Ngoặc vuông []","Ngoặc đơn ()",B,Topic 2: Data Warehouse & DB
+"Scaling Horizontal (Mở rộng chiều ngang) nghĩa là gì?","Nâng cấp RAM/CPU cho một máy chủ","Thêm nhiều máy chủ vào hệ thống","Tối ưu hóa code",B,Topic 2: Data Warehouse & DB
+"Cột khóa chính (Primary Key) trong SQL có đặc điểm gì?","Có thể chứa giá trị Null","Duy nhất (Unique) và không Null","Có thể trùng lặp",B,Topic 2: Data Warehouse & DB
+"Neo4j là hệ quản trị cơ sở dữ liệu thuộc loại nào?","RDBMS","Graph NoSQL","Key-Value NoSQL",B,Topic 2: Data Warehouse & DB
+"CAP Theorem khẳng định một hệ thống phân tán chỉ có thể đảm bảo tối đa bao nhiêu yếu tố cùng lúc?","1","2","3",B,Topic 2: Data Warehouse & DB
+"Cho tập dữ liệu: [2, 4, 4, 8, 10, 14]. Giá trị trung bình (Mean) là bao nhiêu?","6","7","8",B,Topic 3: Understanding Data
+"Cho tập dữ liệu: [1, 3, 5, 7, 100]. Giá trị trung vị (Median) là bao nhiêu?","5","23.2","7",A,Topic 3: Understanding Data
+"Mốt (Mode) của tập dữ liệu [1, 2, 2, 3, 4] là gì?","1","2","3",B,Topic 3: Understanding Data
+"Hệ số tương quan Pearson r = 0.95 cho thấy điều gì?","Tương quan tuyến tính dương rất mạnh","Tương quan tuyến tính âm rất mạnh","Không có tương quan",A,Topic 3: Understanding Data
+"Biểu đồ nào dùng để xem phân phối của một biến số và phát hiện độ lệch (skewness)?","Scatter plot","Pie chart","Histogram",C,Topic 3: Understanding Data
+"Trong Box plot, cạnh trên của 'cái hộp' biểu diễn giá trị nào?","Q1 (Tứ phân vị thứ nhất)","Median","Q3 (Tứ phân vị thứ ba)",C,Topic 3: Understanding Data
+"Công thức tính IQR (Interquartile Range) là gì?","Q3 + Q1","Q3 - Q1","(Q3 - Q1) / 2",B,Topic 3: Understanding Data
+"Để trực quan hóa mối quan hệ giữa 'Chiều cao' và 'Cân nặng', biểu đồ nào phù hợp nhất?","Bar chart","Scatter plot","Line chart",B,Topic 3: Understanding Data
+"Chi-square Test (Kiểm định Chi bình phương) dùng để làm gì?","Đo tương quan giữa 2 biến số thực","Kiểm tra tính độc lập giữa 2 biến định danh (categorical)","So sánh trung bình 2 mẫu",B,Topic 3: Understanding Data
+"Nếu r = -1, hai biến có quan hệ như thế nào?","Biến này tăng thì biến kia tăng","Biến này tăng thì biến kia giảm theo một đường thẳng tuyệt đối","Không liên quan gì nhau",B,Topic 3: Understanding Data
+"Cho bảng tần số: Nam-Thích: 20, Nam-KoThích: 10. Tổng số Nam là 30. Tỷ lệ Nam thích là bao nhiêu?","0.33","0.67","0.5",B,Topic 3: Understanding Data
+"Giá trị ngoại lai (Outlier) thường được định nghĩa là giá trị nằm ngoài khoảng nào?","[Q1, Q3]","[Mean - Std, Mean + Std]","[Q1 - 1.5*IQR, Q3 + 1.5*IQR]",C,Topic 3: Understanding Data
+"Biểu đồ nào thích hợp nhất để thể hiện thị phần (tỉ lệ phần trăm) của các hãng điện thoại?","Line chart","Pie chart","Scatter plot",B,Topic 3: Understanding Data
+"Phương sai (Variance) đo lường điều gì?","Giá trị trung tâm của dữ liệu","Mức độ phân tán của dữ liệu quanh giá trị trung bình","Tần suất xuất hiện của dữ liệu",B,Topic 3: Understanding Data
+"Để so sánh doanh thu theo từng tháng trong năm, biểu đồ nào tốt nhất?","Pie chart","Line chart","Scatter plot",B,Topic 3: Understanding Data
+"Tính Range (Khoảng biến thiên) của tập: [10, 2, 5, -1, 8].","10","9","11",C,Topic 3: Understanding Data
+"Bậc tự do (Degrees of Freedom) trong Chi-square test cho bảng 2 dòng, 3 cột là bao nhiêu? Công thức: (R-1)*(C-1)","1","2","6",B,Topic 3: Understanding Data
+"Nếu Mean > Median, phân phối dữ liệu thường có hình dạng gì?","Lệch phải (Positively skewed)","Lệch trái (Negatively skewed)","Đối xứng",A,Topic 3: Understanding Data
+"Độ đo nào ít bị ảnh hưởng bởi giá trị ngoại lai (outliers) nhất?","Mean","Range","Median",C,Topic 3: Understanding Data
+"Bubble plot khác Scatter plot ở điểm nào?","Chỉ vẽ được 1 biến","Thể hiện được biến thứ 3 qua kích thước điểm","Dùng cho dữ liệu thời gian",B,Topic 3: Understanding Data
+"Phương pháp nào KHÔNG nên dùng để xử lý Missing Values?","Điền bằng Mean","Xóa cột nếu số lượng missing > 90%","Điền bằng một giá trị ngẫu nhiên bất kỳ không theo quy tắc",C,Topic 4: Preprocessing
+"Min-Max Normalization chuyển dữ liệu về khoảng giá trị nào?","[0, 1]","[-1, 1]","[Mean, Std]",A,Topic 4: Preprocessing
+"Cho dữ liệu cột A: Min=10, Max=20. Giá trị x=15 sau khi Min-Max scaling là bao nhiêu?","0.25","0.5","0.75",B,Topic 4: Preprocessing
+"Z-score normalization biến đổi dữ liệu về phân phối có đặc điểm gì?","Mean = 1, Std = 0","Mean = 0, Std = 1","Min = 0, Max = 1",B,Topic 4: Preprocessing
+"Tính Z-score của x=12, biết Mean=10, Std=2.","1","2","0.5",A,Topic 4: Preprocessing
+"Kỹ thuật Binning dùng để xử lý vấn đề gì của dữ liệu?","Dữ liệu thiếu","Dữ liệu nhiễu (Noisy data)","Dữ liệu không nhất quán",B,Topic 4: Preprocessing
+"Chia giỏ theo 'Equal-width' (độ rộng bằng nhau) cho khoảng [0, 100] với 5 giỏ. Độ rộng mỗi giỏ là bao nhiêu?","10","20","25",B,Topic 4: Preprocessing
+"Dữ liệu 'Inconsistent' (Không nhất quán) là gì?","Dữ liệu bị thiếu","Dữ liệu chứa các mâu thuẫn (VD: Tuổi = 5 nhưng Ngày sinh = 1990)","Dữ liệu quá lớn",B,Topic 4: Preprocessing
+"Khi nào nên dùng Median để điền dữ liệu thiếu thay vì Mean?","Khi dữ liệu phân phối chuẩn","Khi dữ liệu có nhiều Outliers (Ngoại lai)","Khi dữ liệu là biến định danh",B,Topic 4: Preprocessing
+"Giải pháp nào tốt nhất cho biến định danh (categorical) bị thiếu?","Điền bằng Mean","Điền bằng Mode (Giá trị xuất hiện nhiều nhất)","Điền bằng Min",B,Topic 4: Preprocessing
+"Binning theo 'Equal-frequency' nghĩa là gì?","Các giỏ có độ rộng bằng nhau","Các giỏ có số lượng phần tử bằng nhau","Các giỏ có giá trị trung bình bằng nhau",B,Topic 4: Preprocessing
+"Cho dãy: [1, 2, 3, 4, 100]. Nếu dùng Binning làm trơn bằng Median (Size=3), giá trị của giỏ [1, 2, 3] sẽ được thay thế bằng gì?","1","2","3",B,Topic 4: Preprocessing
+"Tại sao cần chuẩn hóa (Normalization) dữ liệu?","Để xóa dữ liệu nhiễu","Để đưa các feature về cùng một miền giá trị, giúp Gradient Descent hội tụ nhanh hơn","Để biến dữ liệu số thành chữ",B,Topic 4: Preprocessing
+"Nếu cột 'Lương' có đơn vị là triệu đồng, cột 'Tuổi' là số nguyên. Khoảng cách Euclid sẽ bị ảnh hưởng thế nào nếu không chuẩn hóa?","Cột Tuổi sẽ chi phối","Cột Lương sẽ chi phối kết quả do giá trị lớn hơn","Không ảnh hưởng gì",B,Topic 4: Preprocessing
+"Phương pháp nào dùng thuật toán máy học để điền dữ liệu thiếu?","Drop NA","Global Constant","KNN Imputation",C,Topic 4: Preprocessing
+"Dữ liệu nhiễu (Noisy) thường xuất hiện do đâu?","Lỗi thu thập, truyền tải hoặc nhập liệu","Do người dùng cố tình","Do dữ liệu quá ít",A,Topic 4: Preprocessing
+"Làm trơn bằng 'Bin Boundaries' nghĩa là gì?","Thay giá trị trong giỏ bằng Mean của giỏ","Thay giá trị trong giỏ bằng giá trị biên gần nhất (Max hoặc Min của giỏ)","Thay bằng Median",B,Topic 4: Preprocessing
+"Tính Min-Max của x=10 với range [10, 20].","0","0.5","1",A,Topic 4: Preprocessing
+"Nếu Z-score của một điểm dữ liệu là -2, điều đó có nghĩa là gì?","Giá trị đó nhỏ hơn trung bình 2 lần độ lệch chuẩn","Giá trị đó lớn hơn trung bình 2 đơn vị","Giá trị đó là số âm",A,Topic 4: Preprocessing
+"Data Cleaning KHÔNG bao gồm bước nào?","Xử lý missing values","Xử lý noisy data","Train mô hình dự báo",C,Topic 4: Preprocessing
+"TF-IDF là viết tắt của gì?","Term Frequency - Inverse Document Frequency","Term Frequency - Inverse Data Format","Total Frequency - Internal Document Frequency",A,Topic 5: Feature Engineering
+"Công thức tính TF (Term Frequency) của từ t trong văn bản d là gì?","(Số lần t xuất hiện trong d) / (Tổng số từ trong d)","(Tổng số từ) / (Số lần t xuất hiện)","Log(Số lần t xuất hiện)",A,Topic 5: Feature Engineering
+"IDF (Inverse Document Frequency) đo lường điều gì?","Độ phổ biến của từ trong một văn bản","Độ hiếm/đặc trưng của từ trong toàn bộ tập văn bản (corpus)","Độ dài văn bản",B,Topic 5: Feature Engineering
+"Nếu một từ xuất hiện trong tất cả các văn bản, giá trị IDF của nó sẽ tiến về bao nhiêu? (Giả sử dùng log cơ số 10)","0","1","Vô cực",A,Topic 5: Feature Engineering
+"Từ 'the' xuất hiện rất nhiều nhưng ít mang ý nghĩa đặc trưng. TF-IDF của nó thường sẽ như thế nào?","Rất cao","Rất thấp","Bằng 1",B,Topic 5: Feature Engineering
+"Văn bản có 100 từ, từ 'AI' xuất hiện 5 lần. TF của 'AI' là?","0.05","5","20",A,Topic 5: Feature Engineering
+"Có 1000 văn bản, từ 'Data' xuất hiện trong 100 văn bản. Tính IDF (dùng log10)? IDF = log10(1000/100)","1","2","10",A,Topic 5: Feature Engineering
+"Image Embedding chuyển đổi hình ảnh thành dạng gì?","Một hình ảnh khác nhỏ hơn","Một vector số thực (feature vector)","Một đoạn văn bản mô tả",B,Topic 5: Feature Engineering
+"Mạng nơ-ron nào thường được dùng để trích xuất đặc trưng ảnh (Feature Extraction)?","RNN (Recurrent Neural Network)","CNN (Convolutional Neural Network)","LSTM",B,Topic 5: Feature Engineering
+"Bag of Words (BoW) khác TF-IDF ở điểm nào?","BoW chỉ đếm tần suất, không quan tâm độ hiếm của từ trong corpus","BoW phức tạp hơn TF-IDF","BoW dùng cho ảnh, TF-IDF dùng cho text",A,Topic 5: Feature Engineering
+"Stop words là gì?","Những từ khóa quan trọng nhất","Những từ thông dụng, ít mang ý nghĩa phân loại (và, của, là...)","Những từ bị lỗi chính tả",B,Topic 5: Feature Engineering
+"One-hot encoding dùng để làm gì?","Chuyển văn bản thành vector TF-IDF","Chuyển biến định danh (categorical) thành vector nhị phân","Chuẩn hóa ảnh",B,Topic 5: Feature Engineering
+"Tại sao cần chuyển text/image thành vector?","Vì máy tính chỉ hiểu và tính toán được trên các con số","Để giảm dung lượng lưu trữ","Để tăng độ bảo mật",A,Topic 5: Feature Engineering
+"Trong xử lý ảnh, layer nào của CNN thường chứa các đặc trưng cấp cao (high-level features) như khuôn mặt, vật thể?","Các layer đầu tiên","Các layer cuối cùng (gần output)","Layer input",B,Topic 5: Feature Engineering
+"Khoảng cách Cosine giữa 2 vector text thường dùng để đo gì?","Độ dài văn bản","Độ tương đồng về nội dung giữa 2 văn bản","Số lượng từ giống nhau",B,Topic 5: Feature Engineering
+"Tính TF-IDF: TF = 0.5, IDF = 3. Kết quả là?","1.5","0.16","3.5",A,Topic 5: Feature Engineering
+"N-gram là gì trong xử lý ngôn ngữ?","Chuỗi n từ liên tiếp nhau","Chuỗi n ký tự ngẫu nhiên","Một đoạn văn n câu",A,Topic 5: Feature Engineering
+"Kỹ thuật nào giúp giảm số chiều dữ liệu nhưng vẫn giữ đặc trưng chính (thường dùng sau khi TF-IDF)?","PCA (Principal Component Analysis)","Linear Regression","K-Means",A,Topic 5: Feature Engineering
+"Vector hóa từ (Word Embedding) như Word2Vec có ưu điểm gì so với One-hot encoding?","Thể hiện được mối quan hệ ngữ nghĩa giữa các từ (từ gần nghĩa có vector gần nhau)","Dễ tính toán hơn","Không cần training",A,Topic 5: Feature Engineering
+"Trong Image Embedding, mỗi chiều của vector đại diện cho cái gì?","Một pixel cụ thể","Một đặc trưng trừu tượng (đường nét, màu sắc, hình dạng)","Tọa độ điểm ảnh",B,Topic 5: Feature Engineering
+"Trong Confusion Matrix, TP (True Positive) nghĩa là gì?","Dự đoán Positive, Thực tế Positive (Dự đoán đúng)","Dự đoán Positive, Thực tế Negative (Báo động giả)","Dự đoán Negative, Thực tế Positive (Bỏ sót)",A,Topic 6: Evaluation
+"Chỉ số Accuracy được tính bằng công thức nào?","(TP + TN) / Total","TP / (TP + FP)","TP / (TP + FN)",A,Topic 6: Evaluation
+"Precision (Độ chính xác) trả lời cho câu hỏi nào?","Trong các ca tôi dự đoán là bệnh, bao nhiêu ca thực sự có bệnh?","Tôi đã tìm ra được bao nhiêu % người bệnh trong thực tế?","Mô hình đoán đúng bao nhiêu % tổng thể?",A,Topic 6: Evaluation
+"Recall (Độ phủ/Độ nhạy) được tính bằng công thức nào?","TP / (TP + FP)","TP / (TP + FN)","2 * (P * R) / (P + R)",B,Topic 6: Evaluation
+"Khi nào nên dùng F1-Score thay vì Accuracy?","Khi dữ liệu cân bằng","Khi dữ liệu mất cân bằng (Imbalanced Data)","Khi chỉ quan tâm đến Precision",B,Topic 6: Evaluation
+"FP (False Positive) còn được gọi là lỗi gì?","Lỗi loại 1 (Type I Error) - Báo động giả","Lỗi loại 2 (Type II Error) - Bỏ sót","Lỗi hệ thống",A,Topic 6: Evaluation
+"FN (False Negative) trong bài toán phát hiện ung thư nghĩa là gì?","Người khỏe bị báo nhầm là ung thư","Người bị ung thư nhưng máy báo là khỏe (Bỏ sót nguy hiểm)","Máy hỏng",B,Topic 6: Evaluation
+"Cho Matrix: TP=50, FP=50. Tính Precision?","0.5","1.0","0.25",A,Topic 6: Evaluation
+"Cho Matrix: TP=80, FN=20. Tính Recall?","0.8","0.2","0.6",A,Topic 6: Evaluation
+"Trong K-fold Cross-validation với k=5, dữ liệu được chia thế nào?","5 phần: 1 train, 4 test","5 phần: 4 train, 1 test (lặp lại 5 lần)","5 phần: train hết trên 5 phần",B,Topic 6: Evaluation
+"Mục đích chính của Cross-validation là gì?","Tăng tốc độ train","Đánh giá độ ổn định của mô hình và tránh Overfitting","Làm sạch dữ liệu",B,Topic 6: Evaluation
+"Nếu Precision = 1.0 và Recall = 0.1, điều này có nghĩa là gì?","Mô hình đoán bừa","Mô hình rất thận trọng, đoán ít nhưng đoán đâu trúng đó, tuy nhiên bỏ sót rất nhiều","Mô hình hoàn hảo",B,Topic 6: Evaluation
+"Overfitting là hiện tượng gì?","Mô hình học quá kỹ dữ liệu train (kể cả nhiễu), dẫn đến làm tốt trên train nhưng kém trên test","Mô hình quá đơn giản, không học được quy luật","Mô hình chạy quá chậm",A,Topic 6: Evaluation
+"Underfitting xảy ra khi nào?","Mô hình quá phức tạp","Mô hình quá đơn giản, không bắt được xu hướng của dữ liệu (kém cả train lẫn test)","Dữ liệu quá ít",B,Topic 6: Evaluation
+"F1-score là trung bình gì của Precision và Recall?","Trung bình cộng","Trung bình nhân","Trung bình điều hòa (Harmonic Mean)",C,Topic 6: Evaluation
+"Tính Accuracy: TP=90, TN=90, FP=10, FN=10. Total=200.","0.8","0.9","0.95",B,Topic 6: Evaluation
+"Trong bài toán lọc Spam Email, chỉ số nào quan trọng hơn để tránh đưa email quan trọng vào mục Spam?","Recall","Precision","Accuracy",B,Topic 6: Evaluation
+"Grid Search dùng để làm gì trong giai đoạn đánh giá?","Vẽ biểu đồ","Tìm tham số tối ưu (Hyperparameter tuning) cho mô hình","Thu thập dữ liệu",B,Topic 6: Evaluation
+"Cho Precision=0.5, Recall=0.5. Tính F1-score?","0.25","0.5","1",B,Topic 6: Evaluation
+"Hold-out method là gì?","Chia dữ liệu thành 2 tập cố định: Train và Test (thường là 80/20 hoặc 70/30)","Chia dữ liệu thành k phần","Dùng toàn bộ dữ liệu để test",A,Topic 6: Evaluation
